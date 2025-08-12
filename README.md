@@ -1,4 +1,4 @@
-# Processador RISC-V de Ciclo Único - Projeto de Arquitetura de Computadores
+# RISC-V: Simulação
 
 Este repositório contém os arquivos Verilog, simulação e documentação para a implementação de um processador RISC-V de 32 bits de ciclo único, desenvolvido para a disciplina CSI509 - Organização e Arquitetura de Computadores II da Universidade Federal de Ouro Preto (UFOP), campus João Monlevade.
 
