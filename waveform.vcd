@@ -1,0 +1,441 @@
+$date
+	Tue Aug 12 20:30:59 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module testbench_g7 $end
+$scope module dut $end
+$var wire 1 ! PCSrc $end
+$var wire 1 " clk $end
+$var wire 1 # rst $end
+$var wire 32 $ write_back_data [31:0] $end
+$var wire 32 % rs2_data [31:0] $end
+$var wire 5 & rs2_addr [4:0] $end
+$var wire 32 ' rs1_data [31:0] $end
+$var wire 5 ( rs1_addr [4:0] $end
+$var wire 5 ) rd_addr [4:0] $end
+$var wire 32 * pc_plus_4 [31:0] $end
+$var wire 32 + pc_next [31:0] $end
+$var wire 32 , pc_current [31:0] $end
+$var wire 7 - opcode [6:0] $end
+$var wire 32 . mem_read_data [31:0] $end
+$var wire 32 / instruction [31:0] $end
+$var wire 7 0 funct7 [6:0] $end
+$var wire 3 1 funct3 [2:0] $end
+$var wire 32 2 branch_target_addr [31:0] $end
+$var wire 1 3 alu_zero $end
+$var wire 32 4 alu_result [31:0] $end
+$var wire 32 5 alu_input_b [31:0] $end
+$var wire 1 6 RegWrite $end
+$var wire 1 7 MemtoReg $end
+$var wire 1 8 MemWrite $end
+$var wire 1 9 MemRead $end
+$var wire 1 : Branch $end
+$var wire 1 ; ALUSrc $end
+$var wire 2 < ALUOp [1:0] $end
+$var wire 4 = ALUControl [3:0] $end
+$var reg 32 > immediate_extended [31:0] $end
+$scope module alu_control_unit $end
+$var wire 3 ? funct3 [2:0] $end
+$var wire 7 @ funct7 [6:0] $end
+$var wire 2 A ALUOp [1:0] $end
+$var reg 4 B ALUControl [3:0] $end
+$upscope $end
+$scope module alu_unit $end
+$var wire 4 C ALUControl [3:0] $end
+$var wire 32 D b [31:0] $end
+$var wire 1 3 zero $end
+$var wire 32 E a [31:0] $end
+$var reg 32 F result [31:0] $end
+$upscope $end
+$scope module data_mem_unit $end
+$var wire 32 G address [31:0] $end
+$var wire 1 " clk $end
+$var wire 32 H write_data [31:0] $end
+$var wire 32 I read_data [31:0] $end
+$var wire 1 8 MemWrite $end
+$var wire 1 9 MemRead $end
+$upscope $end
+$scope module imem $end
+$var wire 32 J instruction [31:0] $end
+$var wire 32 K address [31:0] $end
+$upscope $end
+$scope module main_control $end
+$var wire 7 L opcode [6:0] $end
+$var reg 2 M ALUOp [1:0] $end
+$var reg 1 ; ALUSrc $end
+$var reg 1 : Branch $end
+$var reg 1 9 MemRead $end
+$var reg 1 8 MemWrite $end
+$var reg 1 7 MemtoReg $end
+$var reg 1 6 RegWrite $end
+$upscope $end
+$scope module pc_reg $end
+$var wire 1 " clk $end
+$var wire 32 N pc_next [31:0] $end
+$var wire 1 # rst $end
+$var reg 32 O pc_current [31:0] $end
+$upscope $end
+$scope module reg_file_unit $end
+$var wire 1 6 RegWrite $end
+$var wire 1 " clk $end
+$var wire 5 P rd_addr [4:0] $end
+$var wire 32 Q rd_data [31:0] $end
+$var wire 5 R rs1_addr [4:0] $end
+$var wire 5 S rs2_addr [4:0] $end
+$var wire 32 T rs2_data [31:0] $end
+$var wire 32 U rs1_data [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 U
+bx T
+b101 S
+b0 R
+bx Q
+b1 P
+b0 O
+b100 N
+b0 M
+b10011 L
+b0 K
+b10100000000000010010011 J
+bz I
+bx H
+bx G
+bx F
+b0 E
+bx D
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+bx >
+b0 =
+b0 <
+0;
+0:
+09
+08
+07
+06
+bx 5
+bx 4
+x3
+bx 2
+b0 1
+b0 0
+b10100000000000010010011 /
+bz .
+b10011 -
+b0 ,
+b100 +
+b100 *
+b1 )
+b0 (
+b0 '
+b101 &
+bx %
+bx $
+1#
+0"
+0!
+$end
+#5000
+1"
+#10000
+0"
+#15000
+1"
+#20000
+0"
+0#
+#25000
+b1010 &
+b1010 S
+b10 )
+b10 P
+b101000000000000100010011 /
+b101000000000000100010011 J
+b1000 +
+b1000 N
+b1000 *
+b100 ,
+b100 K
+b100 O
+1"
+#30000
+0"
+#35000
+bx '
+bx E
+bx U
+b10 <
+b10 A
+b10 M
+16
+b10 &
+b10 S
+b1 (
+b1 R
+b11 )
+b11 P
+b110011 -
+b110011 L
+b1000001000000110110011 /
+b1000001000000110110011 J
+b1100 +
+b1100 N
+b1100 *
+b1000 ,
+b1000 K
+b1000 O
+1"
+#40000
+0"
+#45000
+b100 $
+b100 Q
+03
+b100 4
+b100 F
+b100 G
+b100 5
+b100 D
+b0 '
+b0 E
+b0 U
+18
+1;
+b0 <
+b0 A
+b0 M
+06
+b10000 2
+b100 >
+b11 &
+b11 S
+b0 (
+b0 R
+b100 )
+b100 P
+b100011 -
+b100011 L
+b1100000000001000100011 /
+b1100000000001000100011 J
+b10000 +
+b10000 N
+b10000 *
+b1100 ,
+b1100 K
+b1100 O
+1"
+#50000
+0"
+#55000
+bx $
+bx Q
+x3
+bx 4
+bx F
+bx G
+bx '
+bx E
+bx U
+08
+0;
+bx 5
+bx D
+bx 0
+bx @
+bx &
+bx S
+bx (
+bx R
+bx 1
+bx ?
+bx )
+bx P
+bx -
+bx L
+bx >
+bx /
+bx J
+b10100 +
+b10100 N
+bx 2
+b10100 *
+b10000 ,
+b10000 K
+b10000 O
+1"
+#60000
+0"
+#65000
+b11000 +
+b11000 N
+b11000 *
+b10100 ,
+b10100 K
+b10100 O
+1"
+#70000
+0"
+#75000
+b11100 +
+b11100 N
+b11100 *
+b11000 ,
+b11000 K
+b11000 O
+1"
+#80000
+0"
+#85000
+b100000 +
+b100000 N
+b100000 *
+b11100 ,
+b11100 K
+b11100 O
+1"
+#90000
+0"
+#95000
+b100100 +
+b100100 N
+b100100 *
+b100000 ,
+b100000 K
+b100000 O
+1"
+#100000
+0"
+#105000
+b101000 +
+b101000 N
+b101000 *
+b100100 ,
+b100100 K
+b100100 O
+1"
+#110000
+0"
+#115000
+b101100 +
+b101100 N
+b101100 *
+b101000 ,
+b101000 K
+b101000 O
+1"
+#120000
+0"
+#125000
+b110000 +
+b110000 N
+b110000 *
+b101100 ,
+b101100 K
+b101100 O
+1"
+#130000
+0"
+#135000
+b110100 +
+b110100 N
+b110100 *
+b110000 ,
+b110000 K
+b110000 O
+1"
+#140000
+0"
+#145000
+b111000 +
+b111000 N
+b111000 *
+b110100 ,
+b110100 K
+b110100 O
+1"
+#150000
+0"
+#155000
+b111100 +
+b111100 N
+b111100 *
+b111000 ,
+b111000 K
+b111000 O
+1"
+#160000
+0"
+#165000
+b1000000 +
+b1000000 N
+b1000000 *
+b111100 ,
+b111100 K
+b111100 O
+1"
+#170000
+0"
+#175000
+b1000100 +
+b1000100 N
+b1000100 *
+b1000000 ,
+b1000000 K
+b1000000 O
+1"
+#180000
+0"
+#185000
+b1001000 +
+b1001000 N
+b1001000 *
+b1000100 ,
+b1000100 K
+b1000100 O
+1"
+#190000
+0"
+#195000
+b1001100 +
+b1001100 N
+b1001100 *
+b1001000 ,
+b1001000 K
+b1001000 O
+1"
+#200000
+0"
+#205000
+b1010000 +
+b1010000 N
+b1010000 *
+b1001100 ,
+b1001100 K
+b1001100 O
+1"
+#210000
+0"
+#215000
+b1010100 +
+b1010100 N
+b1010100 *
+b1010000 ,
+b1010000 K
+b1010000 O
+1"
+#220000
+0"
