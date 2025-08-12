@@ -4,7 +4,7 @@ Este repositório contém os arquivos Verilog, simulação e documentação para
 
 ## Visão Geral do Projeto
 
-O objetivo do projeto é projetar, implementar em Verilog e validar um processador funcional capaz de executar um subconjunto específico de instruções do padrão RISC-V. A arquitetura segue o modelo clássico de ciclo único apresentado no livro "Organização e Projeto de Computadores" de Patterson e Hennessy.
+O objetivo do projeto é projetar, implementar em Verilog e validar um processador funcional capaz de executar um subconjunto específico de instruções do padrão RISC-V. A arquitetura segue o modelo clássico de ciclo único apresentado no livro "Organização e Projeto de Computadores II" de Patterson e Hennessy.
 
 ---
 
@@ -87,5 +87,4 @@ A documentação completa do projeto, incluindo a descrição detalhada da imple
 ---
 
 **Autores:**
-* Laila Ferraz
-* (Nome do Colega 2)
+* Laila Ferraz Souza Lima
