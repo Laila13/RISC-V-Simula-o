@@ -1,12 +1,14 @@
-// data_memory_byte.v
 module data_memory_byte (
-    input  wire        clk,       input  wire        MemWrite,
-    input  wire        MemRead,   input  wire [31:0] address,
-    input  wire [31:0] write_data,output wire [31:0] read_data
+    input wire clk, MemWrite, MemRead,
+    input wire [31:0] address, write_data,
+    output reg [31:0] read_data
 );
-    reg [7:0] mem [4095:0];
-    assign read_data = MemRead ? {{24{mem[address][7]}}, mem[address]} : 32'bz;
-    always @(posedge clk) begin
-        if (MemWrite) mem[address] <= write_data[7:0];
+    reg [7:0] memory [1023:0];
+    integer i;
+    initial for (i=0; i<1024; i=i+1) memory[i] = 8'b0;
+    always @(posedge clk) if (MemWrite) memory[address] <= write_data[7:0];
+    always @(*) begin
+        if (MemRead) read_data = {{24{memory[address][7]}}, memory[address]};
+        else read_data = 32'hxxxxxxxx;
     end
 endmodule
