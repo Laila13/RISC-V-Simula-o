@@ -1,0 +1,17 @@
+# Arquivo: memoria_inicial.txt
+# Estado inicial da memória de dados para a simulação.
+
+# O enunciado do trabalho menciona que um valor inicial '7' deve
+# ser usado no teste. Para que a primeira instrução do nosso programa
+# ('lb x1, 0(x0)') seja significativa, este valor '7' foi
+# pré-carregado no endereço de memória 0.
+
+# Formato: Endereco[Byte] : Valor
+
+Endereco[0]: 7
+Endereco[1]: 0
+Endereco[2]: 0
+Endereco[3]: 0
+Endereco[4]: 0
+...
+(Todos os outros endereços da memória são inicializados com 0).

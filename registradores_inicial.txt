@@ -1,0 +1,39 @@
+# Arquivo: registradores_inicial.txt
+# Estado inicial do banco de registradores para a simulação.
+
+# Por convenção, todos os registradores de propósito geral são
+# inicializados com o valor 0 no início da execução ou após um reset.
+# O registrador x0 é permanentemente ligado ao valor 0 por hardware.
+
+Register[ 0] (x0 / zero): 0
+Register[ 1] (x1 / ra)  : 0
+Register[ 2] (x2 / sp)  : 0
+Register[ 3] (x3 / gp)  : 0
+Register[ 4] (x4 / tp)  : 0
+Register[ 5] (x5 / t0)  : 0
+Register[ 6] (x6 / t1)  : 0
+Register[ 7] (x7 / t2)  : 0
+Register[ 8] (x8 / s0)  : 0
+Register[ 9] (x9 / s1)  : 0
+Register[10] (x10 / a0) : 0
+Register[11] (x11 / a1) : 0
+Register[12] (x12 / a2) : 0
+Register[13] (x13 / a3) : 0
+Register[14] (x14 / a4) : 0
+Register[15] (x15 / a5) : 0
+Register[16] (x16 / a6) : 0
+Register[17] (x17 / a7) : 0
+Register[18] (x18 / s2) : 0
+Register[19] (x19 / s3) : 0
+Register[20] (x20 / s4) : 0
+Register[21] (x21 / s5) : 0
+Register[22] (x22 / s6) : 0
+Register[23] (x23 / s7) : 0
+Register[24] (x24 / s8) : 0
+Register[25] (x25 / s9) : 0
+Register[26] (x26 / s10): 0
+Register[27] (x27 / s11): 0
+Register[28] (x28 / t3) : 0
+Register[29] (x29 / t4) : 0
+Register[30] (x30 / t5) : 0
+Register[31] (x31 / t6) : 0
