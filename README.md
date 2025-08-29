@@ -8,7 +8,7 @@ O objetivo do projeto é projetar, implementar em Verilog e validar um processad
 
 ---
 
-## 🚀 Conjunto de Instruções Implementado (Grupo 07)
+## Conjunto de Instruções Implementado (Grupo 07)
 
 O processador foi projetado para executar o seguinte conjunto de instruções:
 
@@ -24,7 +24,7 @@ O processador foi projetado para executar o seguinte conjunto de instruções:
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 O projeto está organizado com os seguintes arquivos Verilog:
 
@@ -49,7 +49,7 @@ O projeto está organizado com os seguintes arquivos Verilog:
 
 ---
 
-## 💻 Como Simular o Projeto
+## Como Simular o Projeto
 
 Para compilar e simular este projeto, você precisará ter o **Icarus Verilog** e o **GTKWave** instalados e configurados no PATH do sistema.
 
@@ -80,7 +80,7 @@ Para compilar e simular este projeto, você precisará ter o **Icarus Verilog** 
 
 ---
 
-## 📄 Documentação
+## Documentação
 
 A documentação completa do projeto, incluindo a descrição detalhada da implementação, análise dos resultados e considerações finais, está disponível no arquivo `relatorio.pdf`, formatado seguindo as normas da Sociedade Brasileira de Computação (SBC).
 
